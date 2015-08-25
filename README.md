@@ -11,3 +11,7 @@ The following will deploy the site to [surge](https://surge.sh/):
 ```
 npm run deploy
 ```
+
+## License
+
+This software is published under the [MIT](LICENSE) license.
