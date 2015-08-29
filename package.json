@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "cp src/index.html _site && webpack-dev-server",
     "build": "webpack && cp src/index.html _site",
     "deploy": "npm run build && surge -p _site -d sk8tricks.com"
   },
@@ -20,6 +20,7 @@
     "json-loader": "^0.5.2",
     "postcss-loader": "^0.6.0",
     "react": "^0.13.3",
+    "react-autocomplete": "^0.1.4",
     "react-hot-loader": "^1.2.9",
     "style-loader": "^0.12.3",
     "stylus-loader": "^1.2.1",
