@@ -16,16 +16,11 @@ export class SkateTrickCalculator extends Component {
   }
 
   handleSelect(index, value) {
-    var newTricks = {};
+    var newTricks = {}, newState;
     newTricks[index] = { $set: value };
-    var newState = update(this.state, { tricks: newTricks });
+    newState = update(this.state, { tricks: newTricks });
     newState.combo = tricks.resolve(...Object.keys(newState.tricks).map((key) => newState.tricks[key]));
     this.setState(newState);
-    // var newState = update(this.state, { tricks: {} });
-    // newState.tricks[index] = value;
-    // this.setState(newState);
-    console.log(newState);
-    // console.log(this.state);
   }
 
   renderItem(item, isHighlighted) {
