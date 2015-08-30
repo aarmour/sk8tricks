@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cp src/index.html _site && webpack-dev-server",
+    "start": "mkdir -p _site && cp src/index.html _site && webpack-dev-server",
     "build": "webpack && cp src/index.html _site",
     "deploy": "npm run build && surge -p _site -d sk8tricks.com"
   },

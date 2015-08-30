@@ -2,7 +2,7 @@ var config = require('hjs-webpack');
 
 module.exports = config({
   // Entry point
-  in: 'src/js/app.js',
+  in: 'src/js/App.js',
 
   // Output directory
   out: '_site',
