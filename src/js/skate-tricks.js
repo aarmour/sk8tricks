@@ -11,10 +11,12 @@ let tricksInternal = {
 
 /**
  * Return a list of fundamental tricks.
+ * @param {String} [trick] If provided, return a list of fundamental tricks that can be combined
+ * with trick.
  * @return {Array<String>} Fundamental tricks
  */
-export function list() {
-  return Object.keys(tricksInternal);
+export function list(trick) {
+  return Object.keys(trick ? (tricksInternal[trick] || {}) : tricksInternal);
 }
 
 /**
@@ -24,7 +26,7 @@ export function list() {
  * @return {Object} Returns an object containing the trick data, or undefined if
  * the list of fundamental tricks does not resolve to a known trick.
  */
-export function resolveTrick(...tricks) {
+export function resolve(...tricks) {
   let resolved = tricksInternal[tricks.shift()];
 
   tricks.forEach((trick) => resolved = resolved[trick]);
