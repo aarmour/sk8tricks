@@ -1,11 +1,11 @@
 let tricksInternal = {
   Kickflip: {
-    'Pop Shuvit, BS': { name: 'Varial Kickflip', aliases: ['Kickflip Shuvit', '180 Flip'] },
-    'Pop Shuvit, FS': { name: 'Hardflip' },
-    '360 Pop Shuvit, FS': { name: 'Tre Flip', aliases: ['360 Flip'] }
+    'Pop Shuvit, Backside': { name: 'Varial Kickflip', aliases: ['Kickflip Shuvit', '180 Flip'] },
+    'Pop Shuvit, Frontside': { name: 'Hardflip' },
+    '360 Pop Shuvit, Frontside': { name: 'Tre Flip', aliases: ['360 Flip'] }
   },
   Heelflip: {
-    'Pop Shuvit, FS': { name: 'Varial Heelflip', aliases: ['Heelflip Shuvit'] }
+    'Pop Shuvit, Frontside': { name: 'Varial Heelflip', aliases: ['Heelflip Shuvit'] }
   }
 };
 
